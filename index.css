@@ -1,0 +1,147 @@
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;    
+    position: relative;
+    height: 75px;
+    
+}
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+#logo{
+    margin: 0px 195px;
+}
+
+#logo img{
+    height: 65px;
+    border-radius: 100%;
+    padding-top: 3px;
+    
+}
+#navbar ul{
+    display: flex;
+    
+    
+}
+#navbar li{
+    list-style: none;
+    font-size: 1.3rem;    
+    font-family: 'Carter One', cursive;
+    
+    
+}
+#navbar a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px;   
+    
+    
+}
+#navbar a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+#home {
+    display: flex;
+    height: 500px;   
+    
+  }
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(/home.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+    top: 0;
+    left: 0;
+}
+.container{
+    padding: 100px 20px;
+
+}
+h1.primary{
+    font-size: 3rem;
+    color: white;
+    padding: 10px 15px;
+    font-family: 'Carter One', cursive;
+}
+h2.primary{
+    font-size: 2rem;
+    color: white;
+    margin: 10px 40px;
+    font-family: 'Carter One', cursive;
+
+}
+p.primary{
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    margin: 10px 40px;
+    padding: 10px 10px;
+    font-family: 'Carter One', cursive;
+}
+#about{
+    display: flex;
+    height: 300px;
+}
+#about img{
+    height: 300px;
+    border: 2px solid white;
+    
+}
+.box{
+    flex-direction: column;
+    border: 2px solid white;
+    background-color: black;
+}
+.box h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: white;
+    padding: 20px 15px;
+    font-family: 'Carter One', cursive;
+}
+p{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Carter One', cursive;
+
+}
+.box .btn{
+    padding: 10px 110px;
+    margin: 34px 377px;
+    font-family: 'Carter One', cursive;
+    font-weight: bold;
+    border-radius: 15px;
+    
+}
+
+.box .btn:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;    
+    font-style: italic;
+}
