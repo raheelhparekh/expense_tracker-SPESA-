@@ -6,10 +6,9 @@
 
 #navbar{
     display: flex;
-    align-items: center;    
+    align-items: center;
     position: relative;
-    height: 75px;
-    
+    height: 75px;  
 }
 #navbar::before {
     content: "";
@@ -22,15 +21,21 @@
     
 }
 #logo{
-    margin: 0px 195px;
+    margin-right: 369px;
+    margin-left: 46px;
 }
 
 #logo img{
     height: 65px;
     border-radius: 100%;
-    padding-top: 3px;
     
 }
+#items{
+    
+    margin-right: 386px;
+    padding: 13px;
+}
+
 #navbar ul{
     display: flex;
     
@@ -47,17 +52,35 @@
     color: white;
     font-weight: 600;
     text-decoration: none;
-    display: block;
-    padding: 8px 20px;   
+    display: block;   
+    padding: 10px 22px;
     
     
 }
 #navbar a:hover{
     color: black;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     font-style: italic;
+    transition: 1s;
+    padding: 8px 12px;
+}
+.login{
+    padding: 5px; 
+    background: transparent;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Carter One', cursive;
+}
+.login:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: italic;
+    transition: 1s;
+    padding:10px;
 }
 
 #home {
@@ -144,4 +167,5 @@ p{
     border: 2px solid white;
     border-radius: 15px;    
     font-style: italic;
+    transition: 1s;
 }
