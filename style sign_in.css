@@ -12,6 +12,18 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    z-index: 1;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    background: url(/sign_in\ bg.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+    top: 0;
+    left: 0;
 }
 .form-box{
     width: 98%;
@@ -25,7 +37,6 @@
     text-align: center;
     translate: translate(-50%,-50%);
 }
-
 .form-box h1{
     font-size: 30px;
     margin-bottom: 60px;
@@ -38,7 +49,7 @@
     position: absolute;
     width: 30px;
     height: 4px;
-    background: #9312f0;
+    background: rgb(8, 117, 136);
     left: 50%;
     border-radius: 3px;
     transform: translate(-50%);
@@ -68,7 +79,7 @@ input{
 .input-field i{
     padding: 18px 15px;
     color: #000;
-    background: #c0c0c2;
+    background: black;
     border-radius: 3px;
     text-align: center;
     width: 50px;
@@ -96,7 +107,7 @@ form p a{
 
 .btn-field button{
     flex-basis: 48%;
-    background: #3c00a0;
+    background: rgb(8, 117, 136);
     color: #fff;
     height: 40px;
     border-radius: 20px;
