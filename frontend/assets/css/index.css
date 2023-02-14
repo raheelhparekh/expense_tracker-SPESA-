@@ -136,7 +136,7 @@ p.primary{
 .box{
     flex-direction: column;
     border: 2px solid white;
-    background-color: black;
+    background-color: rgb(8, 117, 136);
 }
 .box h1{
     text-align: center;
