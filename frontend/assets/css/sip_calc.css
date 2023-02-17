@@ -1,41 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: avenir,helvetica,sans-serif;
+    /* background-color: #dffdf5; */
+
+}
+
 .container {
-    width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    /* border: 1px solid #f10b0b; */
-    border-radius: 5px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#dffdf5,rgba(0,0,0,0.5)), url();
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 1;
-    /* background-color: ; */
+    border-radius: 20px;
 }
 .form-box {
     width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #f10b0b;
-    border-radius: 5px;
+    max-width: 600px;
+    font-size: 20px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    translate: translate(-50%,-50%);
+    border-radius: 20px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
 }
 label {
     display: block;
     margin-top: 10px;
+    font-weight: bold;
+    padding: 5px;
+    
 }
 
 input[type="number"] {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+
 }
 
 button {
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    /* background-color: #4CAF50; */
+    background-color: rgb(8, 117, 136); 
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+h2{
+    font-size: 16px;
+    color: #fff;
 }
 
 #result {
@@ -43,6 +73,19 @@ button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: left;
+    padding: auto;
+}
+
+h1{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 50px;
+    margin-bottom: 60px;
+    color: rgb(8, 117, 136);
+    position: relative;
 }
