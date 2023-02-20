@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: avenir,helvetica,sans-serif;
-    /* background-color: #dffdf5; */
-
 }
 
 .container {
@@ -55,7 +53,6 @@ input[type="number"] {
 
 button {
     padding: 10px;
-    /* background-color: #4CAF50; */
     background-color: rgb(8, 117, 136); 
     border: none;
     border-radius: 5px;
