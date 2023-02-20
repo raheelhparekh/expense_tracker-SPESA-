@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budget Planning</title>
+    <link rel="stylesheet" href="/frontend/assets/css/expence_tracker.css">
+</head>
+<body>
+	<h1>Budget Planning</h1>
+	<div class="container">
+		<div class="form-box">
+			<form>
+				<h2>Income</h2><br>
+				<label for="income-category">Category:</label><br> 
+				<select id="income-category" name="income-category">
+                    <option value="salary">Salary</option>
+                    <option value="bonus">Bonus</option>
+                    <option value="investement">Investement</option>
+                    <option value="other">Other</option>
+                </select><br>
+				<label for="income-amount">Amount:</label>
+				<input type="number" id="income-amount" name="income-amount" required><br>
+				<input type="submit" value="Add Income" onclick="addIncome()">
+			</form>
+			<form>
+				<h2>Expenditure</h2><br>
+				<label for="expenditure-category">Category:</label><br>
+				<select id="expenditure-category" name="expenditure-category">
+                    <option value="food-beverage">Food and Beverages</option>
+                    <option value="transportaion">Transportaion</option>
+                    <option value="living">Living</option>
+                    <option value="rentals">Rentals</option>
+                    <option value="health">Health</option>
+                    <option value="education">Education</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select><br>
+				<label for="expenditure-amount">Amount:</label>
+                <input type="number" id="expenditure-amount" name="expenditure-amount" required><br>
+				<input type="submit" value="Add Expenditure" onclick="addExpenditure()">
+			</form>
+		</div
