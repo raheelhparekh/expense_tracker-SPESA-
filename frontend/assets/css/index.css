@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: avenir,helvetica,sans-serif;  
     /* background-color: #dffdf5; */
     /* color: #393a3d; */
@@ -12,6 +13,7 @@
     align-items: center;
     position: relative;
     height: 75px;
+    justify-content: space-around;
 }
 #navbar::before {
     content: "";
@@ -21,50 +23,72 @@
     z-index: -1;
 }
 #logo{
-    margin-right: 369px;
-    margin-left: 46px;
+    /* border: 2px solid red; */
+    margin-right: 7%;
 }
 #logo img{
-    height: 65px;
-    border-radius: 100%;    
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid white;
 }
-#items{    
-    margin-right: 386px;
-    padding: 13px;
+.item{    
+    /* border: 2px solid red; */
+    padding: 7px;
 }
 
 #navbar ul{
     display: flex; 
+    justify-content: space-between;
     }
-#navbar li{
 
+#navbar li{
     list-style: none;
     font-size: 1.2rem;    
-    font-family: avenir,helvetica,sans-serif;  
+    font-family: avenir,helvetica,sans-serif;
+    display: inline-block; 
+    position: relative; 
     
 }
+#navbar li:hover::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #1b8381;
+    left: 50%;
+    border-radius: 3px;
+    transform: translate(-50%);
+    bottom: -25px;
+}   
 #navbar a{
     color: #393a3d;  
     font-weight: 600;
-    text-decoration: none;
-    display: block;   
-    padding: 10px 22px;   
+    text-decoration: none;      
+    padding: 25px;   
     
 }
-#navbar a:hover{
-    cursor: pointer;
-    transition: 1s;
-    font-weight: 800;
+#login{
+    /* border: 2px solid red; */
+    display: inline;
 }
 .login{
     color: #393a3d;  
     font-size: 1.2rem;
+    font-weight: 600;
     font-family: avenir,helvetica,sans-serif;  
+    display: inline-block;
+    position: relative;
 }
-.login:hover{
-    cursor: pointer;
-    transition: 1s;
-    font-weight: 700;
+.login:hover::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #1b8381;
+    left: 50%;
+    border-radius: 3px;
+    transform: translate(-50%);
+    bottom: -1px;
 }
 
 #home {
@@ -84,7 +108,9 @@
     left: 0;
 }
 .container{
-    padding: 100px 20px;
+    padding: 100px 100px;
+    margin: 10px 20px;
+    /* border: 2px solid black; */
 
 }
 h1.primary{

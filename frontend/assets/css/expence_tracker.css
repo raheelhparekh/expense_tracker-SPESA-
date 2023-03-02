@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: avenir, helvetica, sans-serif;
+}
+
+.container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  margin-left: 10px;
+}
+
+.form-box {
+  flex: 1;
+  margin-right: 50px;
+
+}
+
+.list-box {
+  flex: 1;
+  margin-left: 50px;
+}
+
+h1 {
+
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  font-size: 50px;
+  margin-bottom: 60px;
+  color: rgb(8, 117, 136);
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px #aaa;
+
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px #aaa;
+  width: 50%;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+
+  background-color: #3e8e41;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 50px;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#chartContainer {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+}
+
+select {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #555;
+}
+
+select:hover,
+select:focus {
+  border-color: #aaa;
+}
+
+select option {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #fff;
+  color: #555;
+}
+
+select option:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* default styles */
+
+/* form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+form label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+form input[type="text"] {
+  font-size: 1.2em;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* pie chart styles */
+#chart-container {
+  margin-top: 20px;
+}
+
+/* media queries for small screens */
+@media (max-width: 768px) {
+
+  /* form styles */
+  form {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  form h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  form label {
+    font-size: 1em;
+    margin-bottom: 2px;
+  }
+
+  form input[type="text"] {
+    font-size: 1em;
+    padding: 3px;
+  }
+
+  /* Set the width and height of the slider */
+input[type="range"] {
+  width: 100%;
+  height: 20px;
+}
+
+/* Remove the default appearance of the slider */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+/* Set the color of the slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 3px;
+  background-color: #ddd;
+  border-radius: 1px;
+}
+
+/* Set the color of the slider thumb when it's active */
+input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #0062cc;
+}
+
+
+
+}
