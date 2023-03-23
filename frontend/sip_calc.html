@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIP CALCULATOR</title>
     <link rel="stylesheet" href="/frontend/assets/css/sip_calc.css">
+    <script src="/frontend/assets/js/sip_calc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -26,38 +28,18 @@
                 <br>
                 <button type="button" onclick="calculateSip()"><h2>Calculate</h2></button>
 
-                <div id="result"></div>
+                <div id="result">
+                    <span id="returns"></span>
+                </div>
+                <br>
+                <div>
+                    <canvas id="chart"></canvas>
+                </div>
 
             </form>
         </div>
     </div>
 
 </body>
-
-<script>
-    function calculateSip() {
-        const monthlyInvestment = parseInt(document.getElementById('monthly-investment').value);
-        const interestRate = parseFloat(document.getElementById('interest-rate').value);
-        const timePeriod = parseInt(document.getElementById('time-period').value);
-
-        const monthlyInterestRate = (interestRate / 100) / 12;
-        const totalMonths = timePeriod * 12;
-
-        let futureValue = 0;
-        for (let i = 0; i < totalMonths; i++) {
-            futureValue += monthlyInvestment + (futureValue * monthlyInterestRate);
-            
-        }
-
-        const totalInvestment = monthlyInvestment * totalMonths;
-        const totalReturns = futureValue - totalInvestment;
-
-        const result = `Total Investment: Rs.${totalInvestment.toFixed(2)}<br>
-                        Total Returns: Rs.${totalReturns.toFixed(2)}<br>
-                        Future Value: Rs.${futureValue.toFixed(2)}`;
-
-        document.getElementById('result').innerHTML = result;
-    }
-</script>
 
 </html>

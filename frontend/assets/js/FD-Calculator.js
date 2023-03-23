@@ -3,8 +3,11 @@ function calculate() {
 	const interest = document.getElementById("interest").value;
 	const duration = document.getElementById("duration").value;
 
-	const returns = investment * (1 + (interest / 100) * duration);
-	document.getElementById("returns").innerHTML = returns.toFixed(2);
+	const futureValue = investment * (1 + (interest / 100) * duration);
+	// document.getElementById("futureValue").innerHTML = futureValue.toFixed(2);
+
+    const returns = futureValue - investment;
+    document.getElementById("returns").innerHTML = "Total Returns: " +returns.toFixed(2);
 
 	const chart = document.getElementById("chart").getContext("2d");
 	new Chart(chart, {
