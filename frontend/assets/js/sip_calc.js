@@ -23,7 +23,7 @@ function calculateSip() {
 
     const chart = document.getElementById("chart").getContext("2d");
 	new Chart(chart, {
-		type: "bar",
+		type: "pie",
 		data: {
 			labels: ["Total Investment", "Total Returns"],
 			datasets: [{
