@@ -9,7 +9,6 @@ function calculateSip() {
     let futureValue = 0;
     for (let i = 0; i < totalMonths; i++) {
         futureValue += monthlyInvestment + (futureValue * monthlyInterestRate);
-        
     }
 
     const totalInvestment = monthlyInvestment * totalMonths;
@@ -21,19 +20,49 @@ function calculateSip() {
 
     document.getElementById("returns").innerHTML = result;
 
+    const chartData = [totalInvestment, totalReturns];
     const chart = document.getElementById("chart").getContext("2d");
-	new Chart(chart, {
-		type: "pie",
-		data: {
-			labels: ["Total Investment", "Total Returns"],
-			datasets: [{
-				data: [totalInvestment, totalReturns],
-				backgroundColor: ["#FF6384", "#36A2EB"]
-			}]
-		},
-		options: {
-			responsive: true
-		}
-	});
-
+    if (window.sipChart) {
+        window.sipChart.data.datasets[0].data = chartData;
+        window.sipChart.update();
+    } else {
+        window.sipChart = new Chart(chart, {
+            type: "pie",
+            data: {
+                labels: ["Total Investment", "Total Returns"],
+                datasets: [{
+                    data: chartData,
+                    backgroundColor: ["#FF6384", "#36A2EB"]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    }
 }
+
+// Add event listeners to update input values and recalculate results and chart
+const monthlyInvestmentSlider = document.getElementById('monthly-investment-slider');
+monthlyInvestmentSlider.addEventListener('input', function() {
+    document.getElementById('monthly-investment').value = monthlyInvestmentSlider.value;
+    calculateSip();
+});
+
+const interestRateSlider = document.getElementById('interest-rate-slider');
+interestRateSlider.addEventListener('input', function() {
+    document.getElementById('interest-rate').value = interestRateSlider.value;
+    calculateSip();
+});
+
+const timePeriodSlider = document.getElementById('time-period-slider');
+timePeriodSlider.addEventListener('input', function() {
+    document.getElementById('time-period').value = timePeriodSlider.value;
+    calculateSip();
+});
+
+// Initialize input values and calculate results and chart on page load
+document.getElementById('monthly-investment').value = monthlyInvestmentSlider.value;
+document.getElementById('interest-rate').value = interestRateSlider.value;
+document.getElementById('time-period').value = timePeriodSlider.value;
+calculateSip();
