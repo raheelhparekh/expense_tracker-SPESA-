@@ -17,21 +17,21 @@
             <form action="sip_calc.html" method="POST">
                 <div class ="investment_amount">
                     <label for="monthly-investment">Monthly SIP Amount:</label>
-                    <input type="number" id="monthly-investment" name="monthly-investment" min="0" max="100000" step="1000" required/>
+                    <input type="number" id="monthly-investment" name="monthly-investment" min="0" max="50000" step="500" required/>
                 </div>
                 <br>
-                <input type="range" id="monthly-investment-slider" name="monthly-investment-slider" min="0" max="100000" step="1000"  onchange="updateMonthlyInvestment()">
+                <input type="range" id="monthly-investment-slider" name="monthly-investment-slider" min="0" max="50000" step="500" value="0" onchange="updateMonthlyInvestment()">
                 <br><br>
                 <div class="intrest_rate">
-                    <label for="interest-rate">Interest Rate:</label>
-                    <input type="number" id="interest-rate" name="interest-rate" min="1" max="20" step="1" value="0" required/>
+                    <label for="interest-rate">Rate of Interest:</label>
+                    <input type="number" id="interest-rate" name="interest-rate" min="1" max="25" step="1" value="1" required/>
                 </div>
                 <br>
-                    <input type="range" id="interest-rate-slider" name="interest-rate-slider" min="1" max="20" step="1" value="0" onchange="updateInterestRate()">
+                    <input type="range" id="interest-rate-slider" name="interest-rate-slider" min="1" max="25" step="1" value="1" onchange="updateInterestRate()">
                 <br><br>
                 <div class = "time_period">
                     <label for="time-period">Time Period (Years):</label>
-                    <input type="number" id="time-period" name="time-period" min="0" max="50" step="5" value="0" required/>
+                    <input type="number" id="time-period" name="time-period" min="0" max="50" step="1" value="0" required/>
                 </div>
                 <br>
                     <input type="range" id="time-period-slider" name="time-period-slider" min="0" max="50"  step="5" value="0" onchange="updateTimePeriod()">

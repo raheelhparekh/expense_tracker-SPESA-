@@ -24,6 +24,46 @@ function calculate() {
 		}
 	});
 }
+function updateMonthlyInvestment() {
+    const investment = document.getElementById("investment").value;
+    document.getElementById("monthly-investment-slider").value = investment;
+}
+
+function updateInterestRate() {
+    const interest = document.getElementById("interest").value;
+    document.getElementById("interest-rate-slider").value = interest;
+}
+function updateTimePeriod() {
+	const timePeriodSlider = document.getElementById("time-period-slider");
+	const duration = document.getElementById("duration");
+	duration.value = timePeriodSlider.value;
+  }
+  
+
+// Add event listeners to update input values and recalculate results and chart
+const monthlyInvestmentSlider = document.getElementById('monthly-investment-slider');
+monthlyInvestmentSlider.addEventListener('input', function updateMonthlyInvestment() {
+    document.getElementById('investment').value = monthlyInvestmentSlider.value;
+    // calculate();
+});
+
+const interestRateSlider = document.getElementById('interest-rate-slider');
+interestRateSlider.addEventListener('input', function updateInterestRate() {
+    document.getElementById('interest').value = interestRateSlider.value;
+    // calculate();
+});
+
+const timePeriodSlider = document.getElementById('time-period-slider');
+timePeriodSlider.addEventListener('input', function updateTimePeriod() {
+    document.getElementById('duration').value = timePeriodSlider.value;
+    calculate();
+});
+
+// Initialize input values and calculate results and chart on page load
+document.getElementById('investment').value = monthlyInvestmentSlider.value;
+document.getElementById('interest').value = interestRateSlider.value;
+document.getElementById('duration').value = timePeriodSlider.value;
+calculate();
 
 
 

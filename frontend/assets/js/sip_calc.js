@@ -41,18 +41,32 @@ function calculateSip() {
         });
     }
 }
+function updateMonthlyInvestment() {
+    const investment = document.getElementById("investment").value;
+    document.getElementById("monthly-investment-slider").value = investment;
+}
+
+function updateInterestRate() {
+    const interest = document.getElementById("interest").value;
+    document.getElementById("interest-rate-slider").value = interest;
+}
+function updateTimePeriod() {
+	const timePeriodSlider = document.getElementById("time-period-slider");
+	const duration = document.getElementById("duration");
+	duration.value = timePeriodSlider.value;
+  }
 
 // Add event listeners to update input values and recalculate results and chart
 const monthlyInvestmentSlider = document.getElementById('monthly-investment-slider');
 monthlyInvestmentSlider.addEventListener('input', function() {
     document.getElementById('monthly-investment').value = monthlyInvestmentSlider.value;
-    calculateSip();
+    // calculateSip();
 });
 
 const interestRateSlider = document.getElementById('interest-rate-slider');
 interestRateSlider.addEventListener('input', function() {
     document.getElementById('interest-rate').value = interestRateSlider.value;
-    calculateSip();
+    // calculateSip();
 });
 
 const timePeriodSlider = document.getElementById('time-period-slider');

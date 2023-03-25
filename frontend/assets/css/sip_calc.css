@@ -144,6 +144,7 @@ input[type="range"] {
 
 button {
     padding: 10px;
+    width: 20%;
     background-color: rgb(8, 117, 136); 
     border: none;
     border-radius: 5px;
@@ -157,14 +158,14 @@ h2{
 }
 
 #result {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
     font-size: 18px;
     font-weight: bold;
-    text-align: left;
-    padding: auto;
+    /* padding: auto; */
 }
 
 h1{
