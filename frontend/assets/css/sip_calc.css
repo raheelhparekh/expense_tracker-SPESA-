@@ -7,13 +7,15 @@
 
 .container {
     width: 100%;
-    height: 150vh;
+    height: 200vh;
     background: linear-gradient(#dffdf5,rgba(0,0,0,0.5)), url();
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 1;
-    border-radius: 20px;
+    border-radius: 30px;
+    max-height: justify-content;
+    border: 2 px solid white;
 }
 
 .form-box {
@@ -21,7 +23,7 @@
     max-width: 600px;
     font-size: 20px;
     position: relative;
-    top: 50%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #fff;
@@ -39,17 +41,40 @@ label {
     margin-top: 10px;
     font-weight: bold;
     padding: 5px;
-    
+    text-align: left;
+    display: flexbox;
+}
+
+.investment_amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intrest_rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time_period {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 input[type="number"] {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    width: 250px;
-    height: 40px;
-    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    background-color: #e5e4e4;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 
 }
 input[type="range"] {
@@ -151,4 +176,23 @@ h1{
     margin-bottom: 60px;
     color: rgb(8, 117, 136);
     position: relative;
+}
+
+#chart {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.text_content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(10, 9, 9);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+
 }

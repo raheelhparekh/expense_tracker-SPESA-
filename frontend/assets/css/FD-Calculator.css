@@ -14,6 +14,7 @@
     position: relative;
     z-index: 1;
     border-radius: 20px;
+    max-height: fit-content;
 }
 
 h1 {
@@ -30,20 +31,19 @@ h1 {
 
 .form-box {
     width: 100%;
-    height: 58%;
     max-width: 600px;
     font-size: 20px;
     position: relative;
-    top: 34%;
+    top: 41%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     background: #fff;
     padding: 50px 60px 70px;
     text-align: center;
-    translate: translate(-50%, -50%);
+    translate: translate(-50%,-50%);
     border-radius: 20px;
     border: 2px solid white;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 
 }
 
@@ -52,18 +52,42 @@ label {
     margin-top: 10px;
     font-weight: bold;
     padding: 5px;
-
+    text-align: left;
+    display: flexbox;
 }
+
+.investment_amt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intrest_rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time_period {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 input[type="number"] {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    width: 250px;
-    height: 30px;
-    font-size: 16px;
-
+    border: none;
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    background-color: #e5e4e4;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 button {

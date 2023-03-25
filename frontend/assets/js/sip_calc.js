@@ -14,8 +14,8 @@ function calculateSip() {
     const totalInvestment = monthlyInvestment * totalMonths;
     const totalReturns = futureValue - totalInvestment;
 
-    const result = `Total Investment: Rs. ${totalInvestment.toFixed(2)}<br>
-                    Total Returns: Rs. ${totalReturns.toFixed(2)}<br>
+    const result = `Total Investment: Rs. ${totalInvestment.toFixed(2)}<br><br>
+                    Total Returns: Rs. ${totalReturns.toFixed(2)}<br><br>
                     Future Value: Rs. ${futureValue.toFixed(2)}`;
 
     document.getElementById("returns").innerHTML = result;

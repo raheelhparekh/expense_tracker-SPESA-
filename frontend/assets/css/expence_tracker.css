@@ -6,7 +6,7 @@
 }
 
 .container {
-  width: 35%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,7 +17,7 @@
 
 .form-box {
   flex: 1;
-  margin: right 0;;
+  margin: right 0;
   width: 50%;
   border: 2px solid red;
 
@@ -106,18 +106,20 @@ th {
 }
 
 .charts{
-  margin-left: 50%;
+  
   width : 50%;
   margin-top: 0px;
   border: 2px solid red;
 }
 
-#chartContainer {
+/* #chart-container {
   width: 50%;
   height: 500px;
   border: 2px solid red;
-  
-}
+  margin-right: 800px;
+  align-items: left;
+} */
+
 
 select {
   font-size: 18px;
@@ -173,10 +175,6 @@ form input[type="text"] {
   border-radius: 4px;
 }
 
-/* pie chart styles */
-#chart-container {
-  margin-top: 20px;
-}
 
 /* media queries for small screens */
 @media (max-width: 768px) {
