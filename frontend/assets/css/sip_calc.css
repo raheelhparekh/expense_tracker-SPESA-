@@ -21,7 +21,7 @@
     max-width: 600px;
     font-size: 20px;
     position: relative;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #fff;
@@ -33,6 +33,7 @@
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
 
 }
+
 label {
     display: block;
     margin-top: 10px;
@@ -51,6 +52,70 @@ input[type="number"] {
     font-size: 16px;
 
 }
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #08b58c;
+    cursor: pointer;
+    margin-top: -8px;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background: #08b58c;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-ms-track {
+    height: 5px;
+    background: #ddd;
+  }
+  
+  input[type="range"]::-ms-fill-lower {
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #08b58c;
+    cursor: pointer;
+  }
+  
 
 button {
     padding: 10px;
