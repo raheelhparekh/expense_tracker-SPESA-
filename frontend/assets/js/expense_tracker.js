@@ -1,69 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>Budget Planning</title>
-	<link rel="stylesheet" href="/frontend/assets/css/expence_tracker.css">
-	<!-- <script src="/frontend/assets/js/expense_tracker.js"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-
-<body>
-	<h1>Budget Planning</h1>
-	<div class="container">
-		<div class="form-box">
-			<form>
-				<h2>Income</h2><br>
-				<label for="income-category">Category:</label>
-				<select id="income-category" name="income-category">
-					<option value="salary">Salary</option>
-					<option value="bonus">Bonus</option>
-					<option value="investement">Investement</option>
-					<option value="other">Other</option>
-				</select><br><br>
-				<label for="income">Amount:</label>
-				<!-- <div class = "range-slider">
-					<input type="range"  class = "slider"id="incomeRange" min="0" max="1000000" step="10" value="0">
-			    </div> -->
-				<input type="number" id="incomeRange" min="0" max="1000000" step="10">
-				<span id="incomeOutput">$0</span>
-				<br><br>
-				<input type="submit" value="Add Income" onclick="addIncome()">
-			</form><br>
-			<form>
-				<h2>Expenditure</h2><br>
-				<label for="expenditure-category">Category:</label><br>
-				<select id="expenditure-category" name="expenditure-category">
-					<option value="food-beverage">Food and Beverages</option>
-					<option value="transportaion">Transportaion</option>
-					<option value="living">Living</option>
-					<option value="rentals">Rentals</option>
-					<option value="health">Health</option>
-					<option value="education">Education</option>
-					<option value="entertainment">Entertainment</option>
-					<option value="other">Other</option>
-				</select><br>
-				<label for="expenses">Amount:</label>
-				<!-- <input type="range" class="form-control-range" id="expensesRange" min="0" max="1000000" step="10"
-					value="0"> -->
-				<input type="number" id="expensesRange" min="0" max="1000000" step="10">
-				<span id="expensesOutput">$0</span>
-				<br>
-				<input type="submit" value="Add Expenditure" onclick="addExpenditure()">
-			</form>
-		</div>
-		<br>
-		<div class="charts">
-			<!-- <div id="chart-container"> -->
-			<canvas id="pie-chart" width="50%" height="50%"></canvas>
-			<canvas id="bar-chart"></canvas>
-			<!-- </div> -->
-		</div>
-	</div>
-
-</body>
-<script>
-	// Get the form elements
+// Get the form elements
 
 const incomeForm = document.getElementsByTagName('form')[0];
 const expenditureForm = document.getElementsByTagName('form')[1];
@@ -185,7 +120,4 @@ expenditureForm.addEventListener('submit', (event) => {
     // Reset the form
     expenditureForm.reset();
     expenditureOutput.textContent = '$0';
-});x
-</script>
-
-</html>
+});
