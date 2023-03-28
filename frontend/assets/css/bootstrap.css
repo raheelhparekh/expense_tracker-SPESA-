@@ -55,6 +55,14 @@ body {
   .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  h2{
+    /* border: 2px solid red; */
+    font-weight:bolder;
+    /* color:green; */
+
   }
   /* rtl:end:ignore */
    */
