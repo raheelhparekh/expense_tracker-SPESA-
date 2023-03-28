@@ -14,43 +14,54 @@
   <div class="container">
     <div class="form-box">
       <form action="EMI_Calculator.html" method="POST">
-        <label for="loanAmount">Loan Amount:</label>
-        <input type="number" id="loanAmount" name="loanAmount" required />
-        <br>
+        <div class="container_input">
+          <div class="loan_amount">
+            <label for="loanAmount">Loan Amount:</label>
+            <input type="number" id="loanAmount" name="loanAmount" required />
+          </div>
+          <br>
 
-        <label for="interestRate">Interest Rate(in %):</label>
-        <input type="number" id="interestRate" name="interestRate" step="0.01" required />
-        <br>
+          <input type="range" id="loan-amount-slider" min="0" max="50000" step="500" value="0"
+            onchange="updateMonthlyInvestment()">
+          <br><br>
 
-        <label for="loanTerm">Loan Term (in months):</label>
-        <input type="number" id="loanTerm" name="loanTerm" required />
+          <div class="intrest_rate">
+            <label for="interestRate">Interest Rate(in %):</label>
+            <input type="number" id="interestRate" name="interestRate" step="0.01" required />
+          </div>
+          <br>
+
+          <input type="range" id="interest-rate-slider" name="interest-rate-slider" min="1" max="25" step="1" value="1"
+            onchange="updateInterestRate()">
+          <br><br>
+
+          <div class="loan_term">
+            <label for="loanTerm">Loan Term (in months):</label>
+            <input type="number" id="loanTerm" name="loanTerm" required />
+          </div>
+          <br>
+          <input type="range" id="time-period-slider" name="time-period-slider" min="0" max="50" step="5" value="0"
+            onchange="updateTimePeriod()">
+          <br><br>
+
+          <button type="button" onclick="calculateEMI()">
+            <h2>Calculate</h2>
+          </button>
+          <div id="result">
+
+          </div>
+        </div>
         <br>
-        <button type="button" onclick="calculateEMI()">Calculate EMI</button>
-        <div id="result"></div>
+        <div class="chart-container">
+          <canvas id="chart"></canvas>
+        </div>
       </form>
     </div>
   </div>
+
+  <script src="/frontend/assets/js/EMI_Calculator.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
-
-  <script>
-    function calculateEMI() {
-      var loanAmount = document.getElementById("loanAmount").value;
-      var interestRate = document.getElementById("interestRate").value;
-      var loanTerm = document.getElementById("loanTerm").value;
-
-      var monthlyInterestRate = interestRate / 12 / 100;
-      var totalInterest = monthlyInterestRate * loanAmount * loanTerm;
-      var totalAmount = parseFloat(loanAmount) + totalInterest;
-      var monthlyEMI = totalAmount / loanTerm;
-
-      var result = document.getElementById("result");
-      result.innerHTML =
-        "Your monthly EMI is Rs. " + monthlyEMI.toFixed(2) + "<br>";
-      result.innerHTML +=
-        "Total interest payable is Rs. " + totalInterest.toFixed(2) + "<br>";
-      result.innerHTML +=
-        "Total amount payable is Rs. " + totalAmount.toFixed(2);
-    }
-  </script>
 
 </html>

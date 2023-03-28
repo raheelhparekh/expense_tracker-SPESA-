@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIP CALCULATOR</title>
     <link rel="stylesheet" href="/frontend/assets/css/sip_calc.css">
-    
+
 </head>
 
 <body>
@@ -15,40 +15,52 @@
     <div class="container">
         <div class="form-box">
             <form action="sip_calc.html" method="POST">
-                <div class ="investment_amount">
-                    <label for="monthly-investment">Monthly SIP Amount:</label>
-                    <input type="number" id="monthly-investment" name="monthly-investment" min="0" max="50000" step="500" required/>
-                </div>
-                <br>
-                <input type="range" id="monthly-investment-slider" name="monthly-investment-slider" min="0" max="50000" step="500" value="0" onchange="updateMonthlyInvestment()">
-                <br><br>
-                <div class="intrest_rate">
-                    <label for="interest-rate">Rate of Interest:</label>
-                    <input type="number" id="interest-rate" name="interest-rate" min="1" max="25" step="1" value="1" required/>
-                </div>
-                <br>
-                    <input type="range" id="interest-rate-slider" name="interest-rate-slider" min="1" max="25" step="1" value="1" onchange="updateInterestRate()">
-                <br><br>
-                <div class = "time_period">
-                    <label for="time-period">Time Period (Years):</label>
-                    <input type="number" id="time-period" name="time-period" min="0" max="50" step="1" value="0" required/>
-                </div>
-                <br>
-                    <input type="range" id="time-period-slider" name="time-period-slider" min="0" max="50"  step="5" value="0" onchange="updateTimePeriod()">
-                <br><br>
-                <button type="button" onclick="calculateSip()"><h2>Calculate</h2></button>
+                <div class="container_input">
+                    <div class="investment_amount">
+                        <label for="monthly-investment">Monthly SIP Amount:</label>
+                        <input type="number" id="monthly-investment" name="monthly-investment" min="0" max="50000"
+                            step="500" required />
+                    </div>
+                    <br>
+                    <input type="range" id="monthly-investment-slider" name="monthly-investment-slider" min="0"
+                        max="50000" step="500" value="0" onchange="updateMonthlyInvestment()">
+                    <br><br>
+                    <div class="intrest_rate">
+                        <label for="interest-rate">Rate of Interest:</label>
+                        <input type="number" id="interest-rate" name="interest-rate" min="1" max="25" step="1" value="1"
+                            required />
+                    </div>
+                    <br>
+                    <input type="range" id="interest-rate-slider" name="interest-rate-slider" min="1" max="25" step="1"
+                        value="1" onchange="updateInterestRate()">
+                    <br><br>
+                    <div class="time_period">
+                        <label for="time-period">Time Period (Years):</label>
+                        <input type="number" id="time-period" name="time-period" min="0" max="50" step="1" value="0"
+                            required />
+                    </div>
+                    <br>
+                    <input type="range" id="time-period-slider" name="time-period-slider" min="0" max="50" step="5"
+                        value="0" onchange="updateTimePeriod()">
+                    <br><br>
+                    <button type="button" onclick="calculateSip()">
+                        <h2>Calculate</h2>
+                    </button>
 
-                <div id="result">
-                    <span id="returns"></span>
+                    <div id="result">
+                        <span id="returns"></span>
+                    </div>
                 </div>
                 <br>
                 <div class="chart-container">
                     <canvas id="chart"></canvas>
-                </div>  
+                </div>
             </form>
         </div>
-        <div class = "text_content">
-            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aliquid temporibus sint atque commodi rem repellendus deleniti voluptates, quia porro? Incidunt, vero sint officiis nemo similique illum velit aperiam illo.</h2>
+        <div class="text_content">
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis aliquid temporibus sint atque
+                commodi rem repellendus deleniti voluptates, quia porro? Incidunt, vero sint officiis nemo similique
+                illum velit aperiam illo.</h2>
         </div>
     </div>
 
