@@ -17,17 +17,17 @@
         <div class="container_input">
           <div class="loan_amount">
             <label for="loanAmount">Loan Amount:</label>
-            <input type="number" id="loanAmount" name="loanAmount" required />
+            <input type="number" id="loanAmount" name="loanAmount" min="0" max="5000000" required />
           </div>
           <br>
 
-          <input type="range" id="loan-amount-slider" min="0" max="50000" step="500" value="0"
+          <input type="range" id="loan-amount-slider" min="0" max="5000000" step="1000" value="0"
             onchange="updateMonthlyInvestment()">
           <br><br>
 
           <div class="intrest_rate">
-            <label for="interestRate">Interest Rate(in %):</label>
-            <input type="number" id="interestRate" name="interestRate" step="0.01" required />
+            <label for="interestRate">Rate Of Interest:</label>
+            <input type="number" id="interestRate" name="interestRate" min="0" max="25" step="1" required />
           </div>
           <br>
 
@@ -37,7 +37,7 @@
 
           <div class="loan_term">
             <label for="loanTerm">Loan Term (in months):</label>
-            <input type="number" id="loanTerm" name="loanTerm" required />
+            <input type="number" id="loanTerm" name="loanTerm" min="0" max="50" step="1" required />
           </div>
           <br>
           <input type="range" id="time-period-slider" name="time-period-slider" min="0" max="50" step="5" value="0"
@@ -51,7 +51,6 @@
 
           </div>
         </div>
-        <br>
         <div class="chart-container">
           <canvas id="chart"></canvas>
         </div>

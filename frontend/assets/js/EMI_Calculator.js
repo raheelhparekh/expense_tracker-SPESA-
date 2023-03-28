@@ -10,7 +10,7 @@ function calculateEMI() {
 
     var result = document.getElementById("result");
     result.innerHTML =
-      "Your monthly EMI is Rs. " + monthlyEMI.toFixed(2) + "<br><br>";
+      "Your monthly EMI is Rs. " + monthlyEMI.toFixed(2) + "<br>";
     result.innerHTML +=
       "Total interest payable is Rs. " + totalInterest.toFixed(2) + "<br>";
     result.innerHTML +=
@@ -45,6 +45,7 @@ function updateTimePeriod() {
 	const timePeriodSlider = document.getElementById("time-period-slider");
 	const duration = document.getElementById("loanTerm");
 	duration.value = timePeriodSlider.value;
+    calculateEMI();
   }
   
   // Add event listeners to update input values and recalculate results and chart

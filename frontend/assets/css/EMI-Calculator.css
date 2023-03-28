@@ -34,7 +34,7 @@
   max-height: 1090px;
   font-size: 20px;
   position: relative;
-  top: 41%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
@@ -55,8 +55,8 @@
   /* border: 2px solid red; */
 }
 
-.chart_container {
-  width: 40%;
+.chart-container {
+  width: 60%;
   height: 500px;
   /* margin-top: 30%; */
   /* margin-left: 50%; */
@@ -64,8 +64,8 @@
   /* border: 2px solid red; */
 }
 
-.chart_container canvas {
-  width: 100%;
+.chart-container canvas {
+  width: 50%;
   height: 100%;
 }
 
