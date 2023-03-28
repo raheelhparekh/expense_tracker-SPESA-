@@ -56,12 +56,12 @@
 }
 
 .chart_container {
-  width: 40%;
-  height: 500px;
+  width: 50%;
+  height: 600px;
   /* margin-top: 30%; */
   /* margin-left: 50%; */
   flex-basis: 35%;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 .chart_container canvas {
