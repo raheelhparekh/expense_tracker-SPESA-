@@ -1,20 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
 body {
-	font-family: avenir, helvetica, sans-serif;
-	background-color: #f2f2f2;
+	background-color: #F4FDF9;
 }
 .container {
 	max-width: 100%;
 	padding: 20px;
     /* border: 2px solid red; */
     height: fit-content;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 h1 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 30px;
-  font-size: 50px;
+  margin-top: 20px;
+  font-size: 3rem;
   margin-bottom: 60px;
   color: rgb(8, 117, 136);
   position: relative;
@@ -24,7 +34,7 @@ h1 {
 	vertical-align: bottom;
 	text-align: center;
 	width: 210px;
-	margin-right: 8%;
+	margin-right: 10%;
     margin-left: 10%;
     align-items: center;
     
@@ -46,10 +56,14 @@ h1 {
 .intro-text {
     text-align: left;
     font-family: avenir, helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
     font-size: 20px;
     font-weight: bold;
     padding: 20px; 
     padding-top: 20px;
-    padding-bottom: 50px; 
+    padding-bottom: 80px; 
+    width: 80%;
     color: #363636;
 }
