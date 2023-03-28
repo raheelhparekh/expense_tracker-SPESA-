@@ -3,21 +3,13 @@ $showAlert = false;
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
     $err = "";
-    include 'frontend/db_connect.php';
+    include 'db_connect.php';
     $username = $_POST["username"];
-    $email = $_POST["email"];
     $password = $_POST["password"];
     $exists = false;
-    if($exists == false)
-    {
-        $sql = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('$username', '$email', '$password')";
-        $result = mysqli_query($conn, $sql);
-        if($result)
-        {
-            $showAlert = true;
-        }
-    }    
-    mysqli_close($conn);
+
+    $sql = "INSERT INTO `users` (`username`, `password`) VALUES ('$username', '$password');"
+    
 }
 ?>
 <!DOCTYPE html>
@@ -39,7 +31,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     echo'<div class="alert alert-success alert-dismissible fade show" role="alert">
         <strong>Success</strong> Your Account has been created.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        <span aria-hidden = "true">&times;</span>
         </div>';
     }
 ?> 
@@ -171,7 +162,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             }
           
             // If all inputs are valid, submit the form
-            window.location.href = "spessa.php";
+            window.location.href = "index.html";
           });
           
           signinBtn.addEventListener("click", function (event) {
@@ -190,7 +181,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             }
           
             // If all inputs are valid, submit the form
-            window.location.href = "spessa.php";
+            window.location.href = "index.html";
           });
           
 
