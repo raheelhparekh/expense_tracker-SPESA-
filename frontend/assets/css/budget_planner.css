@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+input[type="date"] {
+    position: flex;
+    width: 250px;
+    height: 50px;
+    left: 48px;
+    top: 129px;
+    background: #D9D9D9;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+input[type="number"] {
+    position: flex;
+    width: 250px;
+    height: 50px;
+    left: 48px;
+    top: 129px;
+    background: #D9D9D9;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    position: flex;
+    width: 250px;
+    height: 50px;
+    left: 48px;
+    top: 129px;
+    background: #D9D9D9;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.form-col {
+    flex: 1;
+    margin-right: 10px;
+    /* adjust as needed */
+}
+
+.form-col:last-child {
+    margin-right: 0;
+}
+
+
+select {
+    position: flex;
+    width: 250px;
+    height: 50px;
+    left: 48px;
+    top: 129px;
+    background: #D9D9D9;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+select:hover,
+select:focus {
+    border-color: #aaa;
+}
+
+select option {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #fff;
+    color: #555;
+}
+
+select option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    /* adjust as needed */
+}
+
+input {
+    display: inline-block;
+    width: calc(100% - 100px); /* adjust as needed */
+    margin-left: 10px; /* adjust as needed */
+}
+
+
+.form-container {
+    height: fit-content;
+    width: fit-content;
+    flex: 1;
+    padding: 20px;
+    background-color: #bcf2f5;
+    border-radius: 10px;
+}
+
+.chart-container {
+    height: fit-content;
+    width: fit-content;
+    flex: 1;
+    padding: 20px;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    height: 40px;
+
+    font-size: 20px;
+
+}
+
+.chart-container h2 {
+    margin-bottom: 20px;
+}
+
+canvas {
+    max-width: 80%;
+    /* border: 2px solid red; */
+    max-height: 90%;
+    
+    
+}
+
+
+
+h1 {
+
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 50px;
+    margin-bottom: 60px;
+    color: rgb(8, 117, 136);
+    position: relative;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: poppins;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(8, 117, 136);
+    position: relative;
+}
