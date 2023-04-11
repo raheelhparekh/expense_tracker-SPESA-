@@ -1,15 +1,14 @@
-<?php
-$showAlert = false;
+<?php 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
-    $err = "";
     include 'db_connect.php';
     $username = $_POST["username"];
+    $email = $_POST["email"];
     $password = $_POST["password"];
     $exists = false;
-
-    $sql = "INSERT INTO `users` (`username`, `password`) VALUES ('$username', '$password');"
-    
+    echo $username;
+        $sql = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('$username', '$email', '$password')";
+        $result = mysqli_query($conn , $sql);
 }
 ?>
 <!DOCTYPE html>
@@ -20,51 +19,41 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./assets/css/style_sign_in.css">
+    <link rel="stylesheet" href="../assets/css/style_sign_in.css">
     <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<?php
-    if($showAlert)
-    {
-    echo'<div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Success</strong> Your Account has been created.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>';
-    }
-?> 
-
     <div class="container">
         <div class="form-box">
             <h1 id="title">Sign Up</h1>
-            <form>
+            <form method = "POST">
                 <div class="input-group">
                     <div class="input-field" id="nameField">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" required>
+                        <input type="text" placeholder="Username" name="username" required>
                     </div>
 
                     <div class="input-field" id="EmailField">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" placeholder="Email" name="email" required>
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Password" name="password" required>
                     </div>
                     <p>Forgot Password? <a href="#">Click here!</a></p>
                 </div>
                 <div class="btn-field">
                     <!-- <input type="submit" value ="Sign Up" id="signupbtn" > -->
-                    <button type="button" input type="submit" id="signupbtn">Sign Up</button>
-                    <button type="button" class="disable" id="signinbtn">Sign In</button>
+                    <button type="submit" id="signupbtn">Sign Up</button>
+                    <button class="disable" id="signinbtn">Sign In</button>
                 </div>
             </form>
         </div>
     </div>
-
+<!-- 
     <script>
 
         let signupbtn = document.getElementById("signupbtn");
@@ -95,57 +84,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         let signupBtn = document.getElementById("signupbtn");
         let signinBtn = document.getElementById("signinbtn");
 
-        //// Add click event listeners to the buttons
-        //signupBtn.addEventListener("click", function (event) {
-        //    // Prevent the default form submission behavior
-        //    event.preventDefault();
-//
-        //    if (usernameField.value.trim() === "") {
-        //        alert("Please enter a username.");
-        //        return;
-        //    }
-        //    if (emailField.value.trim() === "") {
-        //        alert("Please enter an email address.");
-        //        return;
-        //    }
-        //    if (!isValidEmail(emailField.value.trim())) {
-        //        alert("Please enter a valid email address.");
-        //        return;
-        //    }
-        //    if (passwordField.value.trim() === "") {
-        //        alert("Please enter a password.");
-        //        return;
-        //    }
-//
-        //    // If all inputs are valid, submit the form
-        //    //alert("Sign up successful!");
-        //    window.location.href = "index.html";
-//
-        //});
-//
-        //signinBtn.addEventListener("click", function (event) {
-        //    // Prevent the default form submission behavior
-        //    event.preventDefault();
-//
-        //    if (emailField.value.trim() === "") {
-        //        alert("Please enter an email address.");
-        //        return;
-        //    }
-        //    if (!isValidEmail(emailField.value.trim())) {
-        //        alert("Please enter a valid email address.");
-        //        return;
-        //    }
-        //    if (passwordField.value.trim() === "") {
-        //        alert("Please enter a password.");
-        //        return;
-        //    }
-//
-        //    // If all inputs are valid, submit the form
-        //    alert("Sign in successful!");
-        //    window.location.href = "index.html";
-        //    
-        //});
-
+        
         signupBtn.addEventListener("click", function (event) {
             // Prevent the default form submission behavior
             event.preventDefault();
@@ -162,7 +101,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             }
           
             // If all inputs are valid, submit the form
-            window.location.href = "index.html";
+            // window.location.href = "spessa.html";
           });
           
           signinBtn.addEventListener("click", function (event) {
@@ -181,7 +120,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             }
           
             // If all inputs are valid, submit the form
-            window.location.href = "index.html";
+            // window.location.href = "spessa.html";
           });
           
 
@@ -190,8 +129,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             // Use a regular expression to check if the email is valid
             let emailRegex = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
             return emailRegex.test(email);
-        }
-    </script>
+        } -->
+    <!-- </script> -->
 </body>
 
 </html>
