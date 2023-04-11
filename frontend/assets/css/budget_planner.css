@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: avenir, helvetica, sans-serif;
 
 }
 
@@ -9,6 +10,7 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
+    /* border: 2px solid red; */
 }
 
 input[type="date"] {
@@ -108,19 +110,25 @@ input {
 
 
 .form-container {
-    height: fit-content;
+    /* height: fit-content; */
     width: fit-content;
     flex: 1;
     padding: 20px;
     background-color: #bcf2f5;
     border-radius: 10px;
+    /* border: 2px solid red; */
+    background-color: rgb(111, 111, 178);
+    
 }
 
 .chart-container {
-    height: fit-content;
+    /* height: fit-content; */
+    /* border: 2px solid white; */
+    background-color: wheat;
     width: fit-content;
     flex: 1;
-    padding: 20px;
+    padding: 70px;
+    /* margin-left: 40px; */
    
 }
 
@@ -136,34 +144,29 @@ label {
 input[type="submit"] {
     margin-top: 20px;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #99dc9c;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 250px;
     height: 40px;
-
     font-size: 20px;
-
 }
 
 .chart-container h2 {
     margin-bottom: 20px;
+    /* color: black; */
 }
 
 canvas {
     max-width: 80%;
-    /* border: 2px solid red; */
     max-height: 90%;
+    margin-left: 60px;
     
     
 }
-
-
-
 h1 {
-
     font-weight: bold;
     text-align: center;
     margin-bottom: 0px;
@@ -172,14 +175,15 @@ h1 {
     margin-bottom: 60px;
     color: rgb(8, 117, 136);
     position: relative;
+    font-family: avenir, helvetica, sans-serif;
 }
 
 h2 {
     font-weight: bold;
-    font-family: poppins;
+    font-family: avenir, helvetica, sans-serif;
     text-align: center;
     font-size: 40px;
     margin-bottom: 20px;
-    color: rgb(8, 117, 136);
+    color: white;
     position: relative;
 }
