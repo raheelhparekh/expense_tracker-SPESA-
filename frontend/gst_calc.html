@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GST Calculator India</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/frontend/assets/css/gst_calc.css">
+</head>
+<body>
+	<h1>GST Calculator India</h1>
+	<div class="container">
+		<label for="amount">Enter Amount:</label>
+		<input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+		<label for="gst">GST Rate:</label>
+		<select id="gst" name="gst" required>
+			<option value="">Select GST Rate</option>
+			<option value="0.25">0.25%</option>
+			<option value="0.50">0.50%</option>
+			<option value="1.00">1.00%</option>
+			<option value="1.50">1.50%</option>
+			<option value="2.50">2.50%</option>
+			<option value="5.00">5.00%</option>
+			<option value="12.00">12.00%</option>
+			<option value="18.00">18.00%</option>
+			<option value="28.00">28.00%</option>
+		</select>
+
+		<button onclick="calculate()">Calculate</button>
+
+		<label for="result">Result:</label>
+		<input type="text" id="result" name="result" readonly>
+	</div>
+
+	<script src="/frontend/assets/js/gst_calc.js
+	"></script>
+</body>
+</html>
