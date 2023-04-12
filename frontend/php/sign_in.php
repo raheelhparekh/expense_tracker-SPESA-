@@ -1,16 +1,4 @@
-<?php 
-if($_SERVER["REQUEST_METHOD"] == "POST")
-{
-    include 'db_connect.php';
-    $username = $_POST["username"];
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-    $exists = false;
-    echo $username;
-        $sql = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('$username', '$email', '$password')";
-        $result = mysqli_query($conn , $sql);
-}
-?>
+<?php include('./sign_up_process.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 

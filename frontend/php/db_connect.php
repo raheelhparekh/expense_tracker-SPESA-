@@ -4,9 +4,9 @@ $username = "root";
 $password = "";
 $database = "spesa";
 
-$conn = mysqli_connect($server , $username , $password , $database);
+$db = mysqli_connect($server , $username , $password , $database);
 
-if(!$conn)
+if(!$db)
 {
     die("Error" . mysqli_connect_error());
 }
