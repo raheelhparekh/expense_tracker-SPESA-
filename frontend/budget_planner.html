@@ -9,14 +9,19 @@
 </head>
 
 <body>
-    <h1>Budget Planning</h1>
+    <div class="header">
+        <a href="/frontend/spessa.html">
+            <img src="/frontend/assets/img/logo1.jpg" alt="SPESA" height="70px" width="70px">
+        </a>
+        <h1>Budget Planning</h1>
+    </div>
+   
     <div class="container">
-        <div class="form-container">
-            <h2>Add Expense</h2>
+        <div class="form-container"><br><br><br>
+            <h2>Add Expense</h2><br>
             <form id="expense-form">
                 <div class="form-row">
                     <div class="form-col">
-
                         <label for="date">Date:</label>
                         <input type="date" id="date" name="date" required>
                     </div>
@@ -32,8 +37,8 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
-
                 </div>
+                <br>
 
                 <div class="form-row">
                     <div class="form-col">
@@ -45,7 +50,7 @@
                         <input type="text" id="note" name="note">
                     </div>
                 </div>
-
+                <br>
                 <input type="submit" value="Add Expense">
             </form>
         </div>
