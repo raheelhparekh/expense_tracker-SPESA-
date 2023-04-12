@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: avenir,helvetica,sans-serif;
+    font-family: 'Poppins', sans-serif;
     /* color:  #1b8381; */
     /* background-color: #dffdf5; */
 }
@@ -21,6 +21,7 @@ body {
 .nav-item{
     padding: 5px;
     font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
 }
 
   
@@ -33,13 +34,29 @@ body {
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
-    bottom: 3rem;
+    bottom: 4rem;
     z-index: 10;
   }
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
+    height: 40rem;
+  }
+  h1.firstcarousel{
+    color: rgb(63, 45, 45);
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+
+  }
+  h2.firstcarousel{
+    color: rgb(63, 46, 46);
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+
   }
   
   
