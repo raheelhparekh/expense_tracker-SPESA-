@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SPESA</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <nav id="navbar">
-      <div id="logo">
-        <img src="./assets/img/logo1.jpg" alt="Spesa" />
-      </div>
-        <ul>
-          <li class="item"><a href="#">Home</a></li>
-          <li class="item"><a href="#">About Us</a></li>
-          <li class="item"><a href="#">Contact Us</a></li>
-          <li class="item"><a href="#">Services</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-    <div class="container">
-        <h1>Login</h1>
-        <input type="text" placeholder="Username" name="username" class="input1">
-        <input type="password" placeholder="Password" name="password" class="input1">
-        <input type="checkbox">Remember Me <br>
-        <button class="btn" name="sign in" >Sign In</button>
-    </div>
 
-    </section>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/frontend/assets/css/login.css">
+    <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign In</h1>
+            <form method="POST">
+                <div class="input-group">
+                    <!-- <div class="input-field" id="nameField">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" name="username" required>
+                    </div> -->
+
+                    <div class="input-field" id="EmailField">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <p>Forgot Password? <a href="#">Click here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <!-- <input type="submit" value ="Sign Up" id="signupbtn" > -->
+                    <button type="submit" id="signupbtn">Sign Up</button>
+                    <button class="disable" id="signinbtn">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>
