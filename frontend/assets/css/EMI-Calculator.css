@@ -216,3 +216,30 @@ h1 {
   color: rgb(8, 117, 136);
   position: relative;
 }
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.header a {
+  align-self: flex-start;
+}
+
+.header img {
+  margin-right: 10%;
+  border-radius: 50px;
+  margin-top: 15%;
+  margin-left: 60%;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  margin-right: 38%;
+  margin-top: 1%;
+}

@@ -230,3 +230,50 @@ h1{
     z-index: 2;
 
 }
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.header a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  align-items: center;
+} */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  align-self: flex-start;
+}
+
+.header img {
+  margin-right: 10%;
+  border-radius: 50px;
+  margin-top: 15%;
+  margin-left: 60%;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  margin-right: 38%;
+  margin-top: 1%;
+}
+ 
+
+
