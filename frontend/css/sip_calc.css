@@ -218,22 +218,6 @@ h1{
     position: relative;
 }
 
-
-
-.text_content{
-    position: relative;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: rgb(10, 9, 9);
-    /* text-align: center; */
-    font-size: 20px;
-    font-weight: bold;
-    z-index: 2;
-    /* border: 2px solid yellow; */
-    padding: 100px;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -258,6 +242,20 @@ h1{
   margin-top: 1%;
 }
  
+
+.text_content{
+  position: relative;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: rgb(10, 9, 9);
+  /* text-align: center; */
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+  /* border: 2px solid yellow; */
+  padding: 100px;
+}
 
 
 h3{
