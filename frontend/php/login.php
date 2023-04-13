@@ -1,3 +1,4 @@
+<?php include('login_process.php')?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/frontend/assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
     <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,8 +35,8 @@
                 </div>
                 <div class="btn-field">
                     <!-- <input type="submit" value ="Sign Up" id="signupbtn" > -->
-                    <button type="submit" id="signupbtn">Sign Up</button>
-                    <button class="disable" id="signinbtn">Sign In</button>
+                    <!-- <button type="submit" id="signupbtn">Sign Up</button> -->
+                    <button class="disable" id="signinbtn">Sign In <a href="spessa.php"></a></button>
                 </div>
             </form>
         </div>

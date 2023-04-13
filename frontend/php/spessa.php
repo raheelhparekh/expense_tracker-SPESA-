@@ -87,7 +87,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="/frontend/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -121,7 +121,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/frontend/sip_calc.html">SIP Calculator</a></li>
-                            <li><a class="dropdown-item" href="/frontend/EMI_Calculator.html">EMI Calculator</a></li>
+                            <li><a class="dropdown-item" href="EMI_Calculator.html">EMI Calculator</a></li>
                             <li><a class="dropdown-item" href="/frontend/FD_Calculator.html">FD Calculator</a></li>
                             <li><a class="dropdown-item" href="/frontend/expence_tracker.html">Expense Tracker</a></li>
                         </ul>
@@ -148,7 +148,7 @@
                         <div class="carousel-caption text-start">
                             <h1>Grow Big with SPESA</h1>
                             <p> The ULTIMATE Expense Tracker</p>
-                            <p><a class="btn btn-lg btn-primary" href="/frontend/sign_in.html">Sign up today</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="sign_up.php">Sign up today</a></p>
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="/frontend/assets/img/spend.png" alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle" src="../img/spend.png" alt="Generic placeholder image" width="200" height="200">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
                             dy=".3em"></text>
@@ -209,7 +209,7 @@
                     <p><a class="btn btn-secondary" href="/frontend/savings.html">Read More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="/frontend/assets/img/save.png" alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle" src="../img/save.png" alt="Generic placeholder image" width="200" height="200">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
                         dy=".3em"></text>
@@ -219,7 +219,7 @@
                     <p><a class="btn btn-secondary" href="/frontend/savings.html">Read More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="/frontend/assets/img/earn.jpg" alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle" src="../img/earn.jpg" alt="Generic placeholder image" width="200" height="200">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
                             dy=".3em"></text>

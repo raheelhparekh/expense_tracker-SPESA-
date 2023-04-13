@@ -41,6 +41,14 @@
             </form>
         </div>
     </div>
+    <script>
+        let signinBtn = document.getElementById("signinbtn");
+
+        signinBtn.addEventListener("click", function() {
+        window.location.href = "./login.php";
+});
+
+    </script>
 <!-- 
     <script>
 

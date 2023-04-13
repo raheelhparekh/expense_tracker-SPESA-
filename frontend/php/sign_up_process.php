@@ -29,10 +29,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
       
         if ($user) {
           if ($user['username'] === $username) {
+            echo ("Username already exists. ");
             array_push($errors, "Username already exists");
           }
       
           if ($user['email'] === $email) {
+            echo ("Email already exists");
             array_push($errors, "Email already exists");
           }
         }
@@ -45,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
           mysqli_query($db, $query);
           $_SESSION['username'] = $username;
           $_SESSION['success'] = "You are now logged in";
-          header('location: spessa.html');
+          header('location: spessa.php');
         }
 }
 ?>
