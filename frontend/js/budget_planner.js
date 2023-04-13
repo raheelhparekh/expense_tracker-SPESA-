@@ -61,3 +61,4 @@ window.onload = function() {
   pieChart.style.width = '50px';
   pieChart.style.height = '50px';
 };
+

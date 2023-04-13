@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
+    margin-top: 3%;
     /* border: 2px solid red; */
 }
 
@@ -117,17 +118,18 @@ input {
     background-color: #bcf2f5;
     border-radius: 10px;
     /* border: 2px solid red; */
-    background-color: rgb(111, 111, 178);
+    background-color: rgb(111, 181, 235);
     
 }
 
 .chart-container {
     /* height: fit-content; */
     /* border: 2px solid white; */
-    background-color: wheat;
+    background-color: rgb(223, 232, 235);
     width: fit-content;
     flex: 1;
     padding: 70px;
+    border-radius: 10px;
     /* margin-left: 40px; */
    
 }
@@ -144,7 +146,7 @@ label {
 input[type="submit"] {
     margin-top: 20px;
     padding: 10px;
-    background-color: #99dc9c;
+    background-color: #8aea8e;
     color: white;
     border: none;
     border-radius: 5px;
@@ -152,11 +154,15 @@ input[type="submit"] {
     width: 250px;
     height: 40px;
     font-size: 20px;
+    font-weight: bold;
+    margin-left: 250px;
+
 }
 
 .chart-container h2 {
-    margin-bottom: 20px;
-    /* color: black; */
+    /* margin-bottom: 20px; */
+    color: black;
+    margin-top: 0px;
 }
 
 canvas {
@@ -187,3 +193,28 @@ h2 {
     color: white;
     position: relative;
 }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header a {
+    align-self: flex-start;
+  }
+  
+  .header img {
+    margin-right: 10%;
+    border-radius: 50px;
+    margin-top: 15%;
+    margin-left: 60%;
+  }
+  
+  .header h1 {
+    margin: 0;
+    text-align: center;
+    margin-right: 38%;
+    margin-top: 1%;
+  }
+   
