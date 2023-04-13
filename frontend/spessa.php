@@ -87,7 +87,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -95,7 +95,7 @@
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
                   <a class="navbar-brand" href="#">
-                    <img src="/frontend/assets/img/logo1.jpg" alt="SPESSA" width="60" height="60" >
+                    <img src="img/logo1.jpg" alt="SPESSA" width="60" height="60" >
                   </a>
                 </div>
               </nav>
@@ -109,7 +109,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/frontend/about_us.html" target="_blank">About Us</a>
+                        <a class="nav-link" href="./about_us.html" >About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
@@ -120,10 +120,10 @@
                             Services
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/frontend/sip_calc.html">SIP Calculator</a></li>
+                            <li><a class="dropdown-item" href="sip_calc.html">SIP Calculator</a></li>
                             <li><a class="dropdown-item" href="EMI_Calculator.html">EMI Calculator</a></li>
-                            <li><a class="dropdown-item" href="/frontend/FD_Calculator.html">FD Calculator</a></li>
-                            <li><a class="dropdown-item" href="/frontend/expence_tracker.html">Expense Tracker</a></li>
+                            <li><a class="dropdown-item" href="FD_Calculator.html">FD Calculator</a></li>
+                            <li><a class="dropdown-item" href="budget_planner.html">Expense Tracker</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -161,7 +161,7 @@
                         <div class="carousel-caption">
                             <h1>Good Financial Habits</h1>
                             <p></p>
-                            <p><a class="btn btn-lg btn-primary" href="/frontend/savings.html">Read more</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="./savings.html">Read more</a></p>
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="../img/spend.png" alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle" src="img/spend.png" alt="Generic placeholder image" width="200" height="200">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
                             dy=".3em"></text>
@@ -209,7 +209,7 @@
                     <p><a class="btn btn-secondary" href="/frontend/savings.html">Read More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="../img/save.png" alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle" src="img/save.png" alt="Generic placeholder image" width="200" height="200">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
                         dy=".3em"></text>
@@ -219,14 +219,14 @@
                     <p><a class="btn btn-secondary" href="/frontend/savings.html">Read More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <img class="rounded-circle" src="../img/earn.jpg" alt="Generic placeholder image" width="200" height="200">
+                    <img class="rounded-circle" src="img/earn.jpg" alt="Generic placeholder image" width="200" height="200">
                         <title>Placeholder</title>
                         <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
                             dy=".3em"></text>
                     </img><br><br>
                     <h2 class="fw-normal">Earning</h2>
                     <p>"Opportunities to earn money are all around us. Find your passion, turn it into a side hustle or a full-time job, and make your dreams a reality. Invest in your skills, network with others, and never stop learning. The sky's the limit when it comes to earning potential.".</p>
-                    <p><a class="btn btn-secondary" href="/frontend/savings.html">Read More &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="savings.html">Read More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
 
@@ -242,7 +242,7 @@
                     <p class="lead">SIP or Systematic Investment Plan is a popular investment method that helps investors to invest small amounts of money regularly in mutual funds. With the help of the SIP calculator, investors can easily calculate the returns on their investments over a certain period of time. This tool takes into account the investment amount, duration, and expected rate of return to provide an estimate of the maturity value.</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="/frontend/assets/img/ujjawal_prof.jpg" data-holder-rendered="true">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/home3.jpg" data-holder-rendered="true">
                 </div>
             </div>
 
@@ -255,7 +255,7 @@
                     <p class="lead">Fixed Deposit is a popular investment option among risk-averse investors as it provides a fixed rate of return for a fixed tenure. The FD calculator helps investors to calculate the interest earned on their fixed deposits based on the principal amount, interest rate, and tenure. This tool also provides the maturity value and the interest earned over the investment period.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="/frontend/assets/img/raheel_prof.jpg" data-holder-rendered="true">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/home1.jpg" data-holder-rendered="true">
                 </div>
             </div>
 
@@ -272,7 +272,7 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="/frontend/assets/img/parth_prof.jpg" data-holder-rendered="true">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 500px;" src="img/home2.jpg" data-holder-rendered="true">
                 </div>
             </div>
 

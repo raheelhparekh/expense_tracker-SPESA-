@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../assets/css/style_sign_in.css">
+    <link rel="stylesheet" href="./css/style_sign_in.css">
     <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
 </head>
 
