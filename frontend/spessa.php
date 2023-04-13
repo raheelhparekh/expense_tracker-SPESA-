@@ -206,7 +206,7 @@
                     </img><br><br>
                     <h2 class="fw-normal">Spending</h2>
                     <p>"Money spent on experiences is never wasted. Treat yourself to a well-deserved adventure, and create unforgettable memories. Invest in yourself and your happiness, because you're worth it. Be Wise Spend Wisely"</p><br>
-                    <p><a class="btn btn-secondary" href="/frontend/savings.html">Read More &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="savings.html">Read More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="img/save.png" alt="Generic placeholder image" width="200" height="200">
@@ -216,7 +216,7 @@
                     </img><br><br>
                     <h2 class="fw-normal">Saving</h2>
                     <p>"Saving money is a smart financial habit that leads to long-term security. Small steps today, big savings tomorrow. Cut back on unnecessary expenses, build an emergency fund, and watch your wealth grow."</p><br>
-                    <p><a class="btn btn-secondary" href="/frontend/savings.html">Read More &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="savings.html">Read More &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="img/earn.jpg" alt="Generic placeholder image" width="200" height="200">
