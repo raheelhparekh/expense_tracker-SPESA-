@@ -5,7 +5,7 @@
     <title>Expense Tracker</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/budget_planner.css">
-
+    <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,8 +14,13 @@
             <img src="img/logo1.jpg" alt="SPESA" height="70px" width="70px">
         </a>
         <h1>Budget Planning</h1>
+        <a href="./wallet.html">
+            <div class="wallet" id="walletField">
+                <i class="fas fa-wallet"></i>
+                <h3>Wallet</h3>
+            </div>
+        </a>
     </div>
-   
     <div class="container">
         <div class="form-container"><br><br><br>
             <h2>Add Expense</h2><br>
@@ -59,9 +64,15 @@
             <h2>Expenses By Category</h2>
             <canvas id="pie-chart"></canvas>
         </div>
-    </div>
 
+        <div id="budget-container">
+            <h2>Expense vs Budget Comparison</h2>
+            <canvas id="budget-chart"></canvas>
+        </div>
+    </div>
     
+    
+
     <script src="js/budget_planner.js"></script>
 </body>
 

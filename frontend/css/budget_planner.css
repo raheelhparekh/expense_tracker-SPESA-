@@ -169,9 +169,8 @@ canvas {
     max-width: 80%;
     max-height: 90%;
     margin-left: 60px;
-    
-    
 }
+
 h1 {
     font-weight: bold;
     text-align: center;
@@ -190,7 +189,7 @@ h2 {
     text-align: center;
     font-size: 40px;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(4, 3, 3);
     position: relative;
 }
 
@@ -214,7 +213,50 @@ h2 {
   .header h1 {
     margin: 0;
     text-align: center;
-    margin-right: 38%;
+    margin-left: 8%;
+    margin-right: 15%;
     margin-top: 1%;
   }
-   
+
+ .wallet {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 2%;
+  margin-right: 35px;
+  background-color: #9a9491;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    width: 11%;
+    height: 6%;
+}
+.wallet.i{
+    align-self: center;
+}
+
+.wallet:hover {
+  background-color: #0069d9;
+}
+
+h3{
+    font-weight: bold;
+    font-family: avenir, helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    display: flex;
+    
+}
+
