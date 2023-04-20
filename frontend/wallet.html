@@ -5,6 +5,11 @@
     <link rel="stylesheet" type="text/css" href="css/wallet.css" />
   </head>
   <body>
+    <div id="container">
+    <div id="image">
+      <img src="/frontend/img/wallet1.png" alt="" class="img">
+    </div>
+    <div id="content-container">
     <h1>INCOME DATA</h1>
     <div id="income-container">
       <label for="income-amount">Income Amount:</label>
@@ -23,25 +28,28 @@
     <div id="budget-container">
       <form>
         <label for="groceries-budget">Groceries:</label>
-        <input type="number" id="groceries-budget" name="groceries-budget" min="0"><br>
+        <input type="number" id="groceries-budget" name="groceries-budget" min="0"> <br>
 
         <label for="utilities-budget">Utilities:</label>
-        <input type="number" id="utilities-budget" name="utilities-budget" min="0"><br>
+        <input type="number" id="utilities-budget" name="utilities-budget" min="0"> <br>
 
         <label for="rent-budget">Rent:</label>
         <input type="number" id="rent-budget" name="rent-budget" min="0"><br>
 
         <label for="transportation-budget">Transportation:</label>
-        <input type="number" id="transportation-budget" name="transportation-budget" min="0"><br>
+        <input type="number" id="transportation-budget" name="transportation-budget" min="0"> <br>
 
         <label for="entertainment-budget">Entertainment:</label>
-        <input type="number" id="entertainment-budget" name="entertainment-budget" min="0"><br>
+        <input type="number" id="entertainment-budget" name="entertainment-budget" min="0"> <br>
 
         <label for="other-budget">Other:</label>
-        <input type="number" id="other-budget" name="other-budget" min="0"><br>
+        <input type="number" id="other-budget" name="other-budget" min="0">
       </form>
-    </div>
-    <button onclick="setBudgets()">Set Budgets</button>
+    </div> 
+  
+    <button onclick="setBudgets()">Set Budget</button>
+  </div>
+  </div>
     <script src="/frontend/js/wallet.js"></script>
   </body>
 </html>
