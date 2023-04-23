@@ -2,13 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: avenir, helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
 .container {
+<<<<<<< HEAD
     display: grid;
     flex-direction: row;
+=======
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+>>>>>>> 1f9834ec91fb786b2f0748f9674b210493a920cb
     height: 100vh;
     margin-top: 3%;
     width: 100vw;
@@ -127,7 +133,12 @@ input {
     /* height: fit-content; */
     /* border: 2px solid white; */
     background-color: rgb(223, 232, 235);
+<<<<<<< HEAD
     /* width: 50%; */
+=======
+    width: fit-content;
+    height: fit-content;
+>>>>>>> 1f9834ec91fb786b2f0748f9674b210493a920cb
     flex: 1;
     padding: 70px;
     border-radius: 10px;
@@ -164,7 +175,45 @@ input[type="submit"] {
     /* margin-bottom: 20px; */
     color: black;
     margin-top: 0px;
+    
 }
+
+#budget-container {
+    width: 100%;
+    background-color: #f5f5f5; 
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#budget-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  #budget-chart {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  #budget-chart .bar {
+    background-color: #0077c0;
+    border-radius: 5px;
+    transition: height 0.5s ease;
+  }
+
+  #budget-chart .label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #budget-chart .bar:hover {
+    background-color: #0060a8;
+    cursor: pointer;
+  }
+  
 
 canvas {
     max-width: 80%;
