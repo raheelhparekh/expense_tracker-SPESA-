@@ -4,12 +4,7 @@ session_start();
 $errors = array();
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
-    // include ('db_connect.php');
-    // $username = $_POST["username"];
-    // $email = $_POST["email"];
-    // $password = $_POST["password"];
-    //     $sql = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('$username', '$email', '$password')";
-    //     $result = mysqli_query($conn , $sql);
+   
 
         $username = mysqli_real_escape_string($db, $_POST['username']);
         $email = mysqli_real_escape_string($db, $_POST['email']);

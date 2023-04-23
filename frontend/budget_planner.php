@@ -1,3 +1,31 @@
+<?php
+session_start();
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include('db_connect.php');
+
+if(isset($_POST['submit'])){
+  $expense_date = $_POST['expense_date'];
+  $amount = $_POST['amount'];
+  $user_id = $_SESSION['user_id'];
+  $note = $_POST['note'];
+
+  $query = "INSERT INTO expense (expense_date , amount , user_id , note) 
+            VALUES ('$expense_date', '$amount' , '$user_id' , '$note')";
+  $result = $db->query($query);
+
+  if($result) {
+    header("Location: budget_planner.php");
+    exit();
+  } else {
+    echo "Error: " . $db->error;
+  }
+}
+$db->close();
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +42,7 @@
             <img src="img/logo1.jpg" alt="SPESA" height="70px" width="70px">
         </a>
         <h1>Budget Planning</h1>
-        <a href="./wallet.html">
+        <a href="./wallet.php">
             <div class="wallet" id="walletField">
                 <i class="fas fa-wallet"></i>
                 <h3>Wallet</h3>
@@ -24,11 +52,11 @@
     <div class="container">
         <div class="form-container"><br><br><br>
             <h2>Add Expense</h2><br>
-            <form id="expense-form">
+            <form id="expense-form" method = "POST">
                 <div class="form-row">
                     <div class="form-col">
                         <label for="date">Date:</label>
-                        <input type="date" id="date" name="date" required>
+                        <input type="date" id="date" name="expense_date" required>
                     </div>
                     <div class="form-col">
                         <label for="category">Category:</label>
@@ -56,7 +84,7 @@
                     </div>
                 </div>
                 <br>
-                <input type="submit" value="Add Expense">
+                <input type="submit" name="submit" value="Add Expense">
             </form>
         </div>
 
@@ -71,9 +99,6 @@
         </div>
     </div>
     
-    
-
     <script src="js/budget_planner.js"></script>
 </body>
-
 </html>

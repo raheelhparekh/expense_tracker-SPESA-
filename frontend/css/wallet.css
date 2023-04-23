@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #91b6de;
+    background-color: #eeefef;
     padding: 20px;
   }
   
@@ -45,7 +45,7 @@ body {
     display: block;
     margin: 0 auto;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #515251;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -54,7 +54,7 @@ body {
   }
   
   button:hover {
-    background-color: #3e8e41;
+    background-color: #6ca86e;
   }
 
   #income-container {
@@ -64,11 +64,11 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 70%;
     margin-left: 15%;
     border-radius: 25px;
-    background-color: rgb(127, 189, 255);
+    background-color: rgb(127, 130, 130);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -81,11 +81,11 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 70%;
     margin-left: 15%;
     border-radius: 25px;
-    background-color: rgb(127, 255, 187);
+    background-color: rgb(118, 119, 118);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: bold;

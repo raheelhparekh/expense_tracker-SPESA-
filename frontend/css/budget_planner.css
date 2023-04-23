@@ -7,10 +7,12 @@
 }
 
 .container {
-    display: flex;
+    display: grid;
     flex-direction: row;
     height: 100vh;
     margin-top: 3%;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
     /* border: 2px solid red; */
 }
 
@@ -77,7 +79,6 @@ select {
     border-radius: 15px;
     text-align: center;
     font-size: 20px;
-
 }
 
 select:hover,
@@ -112,7 +113,7 @@ input {
 
 .form-container {
     /* height: fit-content; */
-    width: fit-content;
+    /* width: 50%; */
     flex: 1;
     padding: 20px;
     background-color: #bcf2f5;
@@ -126,7 +127,7 @@ input {
     /* height: fit-content; */
     /* border: 2px solid white; */
     background-color: rgb(223, 232, 235);
-    width: fit-content;
+    /* width: 50%; */
     flex: 1;
     padding: 70px;
     border-radius: 10px;
@@ -146,7 +147,7 @@ label {
 input[type="submit"] {
     margin-top: 20px;
     padding: 10px;
-    background-color: #8aea8e;
+    background-color: #151516;
     color: white;
     border: none;
     border-radius: 5px;
@@ -260,3 +261,7 @@ h3{
     
 }
 
+#budget-container{
+    grid-row: 2;
+    grid-column: span 2;
+}

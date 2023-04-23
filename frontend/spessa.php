@@ -123,7 +123,7 @@
                             <li><a class="dropdown-item" href="sip_calc.html">SIP Calculator</a></li>
                             <li><a class="dropdown-item" href="EMI_Calculator.html">EMI Calculator</a></li>
                             <li><a class="dropdown-item" href="FD_Calculator.html">FD Calculator</a></li>
-                            <li><a class="dropdown-item" href="budget_planner.html">Expense Tracker</a></li>
+                            <li><a class="dropdown-item" href="budget_planner.php">Expense Tracker</a></li>
                         </ul>
                     </li>
                 </ul>

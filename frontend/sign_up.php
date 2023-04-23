@@ -34,7 +34,6 @@
                     <p>Forgot Password? <a href="#">Click here!</a></p>
                 </div>
                 <div class="btn-field">
-                    <!-- <input type="submit" value ="Sign Up" id="signupbtn" > -->
                     <button type="submit" id="signupbtn">Sign Up</button>
                     <button class="disable" id="signinbtn">Sign In</button>
                 </div>
@@ -49,84 +48,6 @@
 });
 
     </script>
-<!-- 
-    <script>
-
-        let signupbtn = document.getElementById("signupbtn");
-        let signinbtn = document.getElementById("signinbtn");
-        let nameField = document.getElementById("nameField");
-        let title = document.getElementById("title");
-
-
-        signinbtn.onclick = function () {
-            nameField.style.maxHeight = "0";
-            title.innerHTML = "Sign In";
-            signupbtn.classList.add("disable");
-            signinbtn.classList.remove("disable");
-
-        }
-
-        signupbtn.onclick = function () {
-            nameField.style.maxHeight = "60px";
-            title.innerHTML = "Sign Up";
-            signupbtn.classList.remove("disable");
-            signinbtn.classList.add("disable");
-        }
-
-        ///////////////////////////////////////////////
-        let usernameField = document.querySelector("#nameField input");
-        let emailField = document.querySelector("#EmailField input");
-        let passwordField = document.querySelector("#EmailField + .input-field input");
-        let signupBtn = document.getElementById("signupbtn");
-        let signinBtn = document.getElementById("signinbtn");
-
-        
-        signupBtn.addEventListener("click", function (event) {
-            // Prevent the default form submission behavior
-            event.preventDefault();
-          
-            // Check if any of the input fields are empty
-            if (usernameField.value.trim() === "" || emailField.value.trim() === "" || passwordField.value.trim() === "") {
-              return;
-            }
-          
-            // Validate the input fields
-            if (!isValidEmail(emailField.value.trim())) {
-              alert("Please enter a valid email address.");
-              return;
-            }
-          
-            // If all inputs are valid, submit the form
-            // window.location.href = "spessa.html";
-          });
-          
-          signinBtn.addEventListener("click", function (event) {
-            // Prevent the default form submission behavior
-            event.preventDefault();
-          
-            // Check if any of the input fields are empty
-            if (emailField.value.trim() === "" || passwordField.value.trim() === "") {
-              return;
-            }
-          
-            // Validate the input fields
-            if (!isValidEmail(emailField.value.trim())) {
-              alert("Please enter a valid email address.");
-              return;
-            }
-          
-            // If all inputs are valid, submit the form
-            // window.location.href = "spessa.html";
-          });
-          
-
-        // Helper function to validate email address
-        function isValidEmail(email) {
-            // Use a regular expression to check if the email is valid
-            let emailRegex = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
-            return emailRegex.test(email);
-        } -->
-    <!-- </script> -->
 </body>
 
 </html>

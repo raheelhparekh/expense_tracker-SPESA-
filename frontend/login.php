@@ -17,11 +17,6 @@
             <h1 id="title">Sign In</h1>
             <form method="POST">
                 <div class="input-group">
-                    <!-- <div class="input-field" id="nameField">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" name="username" required>
-                    </div> -->
-
                     <div class="input-field" id="EmailField">
                         <i class="fas fa-envelope"></i>
                         <input type="email" placeholder="Email" name="email" required>
@@ -34,10 +29,6 @@
                     <p>Forgot Password? <a href="#">Click here!</a></p>
                 </div>
                 <div class="btn-field">
-                    <!-- <input type="submit" value ="Sign Up" id="signupbtn" > -->
-                    <!-- <a href="sign_up.php">
-                        
-                    </a> -->
                     <button type="submit" id="signupbtn">Sign Up </button>
                     
                     <button class="disable" id="signinbtn">Sign In <a href="spessa.php"></a></button>
