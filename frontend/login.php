@@ -29,9 +29,9 @@
                     <p>Forgot Password? <a href="#">Click here!</a></p>
                 </div>
                 <div class="btn-field">
-                    <button type="submit" id="signupbtn">Sign Up </button>
+                    <button id="signinbtn">Sign In</button>
+                    <button class="disable" type="submit" id="signupbtn"><a href="./sign_up.php" style="color: white; text-decoration: none;">Sign Up</a></button>
                     
-                    <button class="disable" id="signinbtn">Sign In <a href="spessa.php"></a></button>
                 </div>
             </form>
         </div>

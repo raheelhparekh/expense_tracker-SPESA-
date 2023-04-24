@@ -130,3 +130,26 @@ const balance = document.getElementById(
   Init();
   
   form.addEventListener('submit',addTransaction);
+
+  // Get the income and expense amounts
+const income = parseFloat(document.getElementById('money-plus').textContent);
+const expense = parseFloat(document.getElementById('money-minus').textContent);
+
+// Create a pie chart
+const chartData = {
+  labels: ['Income', 'Expense'],
+  datasets: [{
+    data: [income, expense],
+    backgroundColor: ['#36A2EB', '#FF6384']
+  }]
+};
+
+const chartOptions = {
+  responsive: true
+};
+
+const pieChart = new Chart(document.getElementById('pie-chart'), {
+  type: 'pie',
+  data: chartData,
+  options: chartOptions
+});

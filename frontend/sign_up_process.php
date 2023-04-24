@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
           $query = "INSERT INTO users (username, email, password) 
                       VALUES('$username', '$email', '$hashpassword')";
           mysqli_query($db, $query);
-          $_SESSION['username'] = $username;
+          $_SESSION['user_id'] = $user['user_id'];
           $_SESSION['success'] = "You are now logged in";
           header('location: spessa.php');
         }

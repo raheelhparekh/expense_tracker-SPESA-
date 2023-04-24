@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $server = "localhost";
 $username = "root";
 $password = "";
@@ -10,4 +10,4 @@ if(!$db)
 {
     die("Error" . mysqli_connect_error());
 }
-?>
+?> -->
