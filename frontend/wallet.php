@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
             <option value="other">Other</option>
           </select>
         </div>
-        <input type = "submit" name="submit" value="Add Expense"/>
+        <button type = "submit" name="submit" value="Add Income">Add Income</button>
       </div>
     </form>
     <script src="./js/wallet.js"></script>

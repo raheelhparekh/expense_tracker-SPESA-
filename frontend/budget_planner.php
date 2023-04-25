@@ -38,6 +38,34 @@ if (isset($_POST['submit'])) {
     <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
 </head>
 
+<style>
+    .form-container {
+    height: 60vh;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 20px;
+    flex: 1;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid red; */
+    }
+    .form-container h2{
+        align-items:center;
+    }
+    .chart-container{
+    width: 80%;
+    /* border: 2px solid red; */
+    margin-left:150px;
+    margin-top :20px;
+    justify-content:center;
+
+}
+.header h1{     
+    align-items:center;
+    /* margin-left:25%; */
+}
+</style>
+
 <body>
     <div class="header">
         <a href="./spessa.php">
@@ -51,14 +79,14 @@ if (isset($_POST['submit'])) {
             </div>
         </a>
     </div>
-    <div class="container">
+    
         <div class="form-container"><br><br><br>
             <h2>Add Expense</h2><br>
             <form id="expense-form" method="POST">
                 <div class="form-row">
                     <div class="form-col">
                         <label for="date">Date:</label>
-                        <input type="date" id="date" name="expense_date" required>
+                        <input type="date" id="date" name="expense_date" value="<?php echo date('Y-m-d'); ?>" required>
                     </div>
                     <div class="form-col">
                         <label for="category">Category:</label>
@@ -89,11 +117,12 @@ if (isset($_POST['submit'])) {
                 <input type="submit" name="submit" value="Add Expense">
             </form>
         </div>
-    </div> 
+
 
     <script src="js/budget_planner.js"></script>
 </body>
 </html>
+
 <?php
 $sql = "SELECT category, SUM(amount) AS total_amount FROM expense WHERE fk_user_id = {$_SESSION['user_id']} GROUP BY category;";
 $result = $mysqli->query($sql);
@@ -124,19 +153,44 @@ echo '
 <head>
     <title>Expense Tracker</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/smart_statistics.css">
+    <link rel="stylesheet" type="text/css" href="./css/budget_planner.css">
     <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
 </head>
+<style>
+*{
+    font-family: Poppins, sans-serif;
+}
+
+.header1 h1{     
+    align-items:center;
+    margin-left:0;
+    // border:2px solid red;
+}
+#myChart{
+    width:120%;
+    justify-content:center;
+    margin-left: 10%; 
+}
+.message{
+    background-color:white;
+    color:red;
+    width:80%;
+    font-size:1.5rem;
+    font-weight:bold;
+    margin:30px;
+    margin-left:20%;
+    font-family: poppins, sans-serif;
+
+
+}
+
+</style>
 
 <body>
-    <div class="header">
-        <a href="./spessa.php">
-            <img src="img/logo1.jpg" alt="SPESA" height="70px" width="70px">
-        </a>
+    <div class="header1">
         <h1>Smart Statistics</h1>
     </div>
 
-    <div class="container">
         <div class="chart-container">
             <canvas id="myChart"></canvas>
         </div>';
@@ -148,8 +202,6 @@ foreach ($categories as $key => $category) {
 }
 
 echo '
-    </div>
-
     <script>
         var ctx = document.getElementById("myChart").getContext("2d");
         var myChart = new Chart(ctx, {

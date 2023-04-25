@@ -39,6 +39,7 @@
             -webkit-user-select: none;
             -moz-user-select: none;
             user-select: none;
+            opacity:0.45;
         }
 
         @media (min-width: 768px) {
@@ -112,7 +113,7 @@
                         <a class="nav-link" href="./about_us.html" >About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <!-- <a class="nav-link" href="#">Contact Us</a> -->
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -140,10 +141,9 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <img src="./img/carousel2.jpg"
                         <rect width="100%" height="100%" fill="#777" />
-                    </svg>
+                    </img>
                     <div class="container">
                         <div class="carousel-caption text-start">
                             <h1>Grow Big with SPESA</h1>
@@ -153,10 +153,10 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <img src="./img/carousel3.jpg"
+                        
                         <rect width="100%" height="100%" fill="#777" />
-                    </svg>
+                </img>
                     <div class="container">
                         <div class="carousel-caption">
                             <h1>Good Financial Habits</h1>
@@ -166,10 +166,10 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <img src="./img/carousel4.jpg"
+                        
                         <rect width="100%" height="100%" fill="#777" />
-                    </svg>
+                    </img>
                     <div class="container">
                         <div class="carousel-caption text-end">
                             <h1>One more for good measure.</h1>
