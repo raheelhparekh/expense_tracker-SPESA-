@@ -63,5 +63,31 @@
   }
   
   /* Add additional styling as needed */
+
+  
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  align-self: flex-start;
+}
+
+.header img {
+  margin-right: 10%;
+  border-radius: 50px;
+  margin-top: 15%;
+  margin-left: 60%;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 29%;
+  
+}
   
   

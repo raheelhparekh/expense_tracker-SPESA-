@@ -172,9 +172,9 @@
                     </img>
                     <div class="container">
                         <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            <h1>Organize your expenses NOW !!</h1>
+                            <p>Checkout the SPESA budget planner</p>
+                            <p><a class="btn btn-lg btn-primary" href="./budget_planner.php">Budget Planner</a></p>
                         </div>
                     </div>
                 </div>
@@ -286,7 +286,7 @@
         <!-- FOOTER -->
         <footer class="container">
             <p class="float-end"><a href="#">Back to top</a></p>
-            <p>&copy; 2023 SPESA, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p>&copy; 2023 SPESA &middot; </p>
         </footer>
     </main>
 

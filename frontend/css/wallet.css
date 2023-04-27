@@ -3,30 +3,31 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background-color:#e0ecff;
 }
+
 #container{
   display: flex;
-  /* border: 2px solid red; */
   width: 100%;
   height: 120%;
   background-color:#e0ecff;
   padding: 20px 20px 20px 20px;
 }
+
 #image{
-  /* border: 2px solid  blueviolet; */
-  width: 40%;
+  width: 45%;
   background-color: #e0ecff;
 }
+
 .img{
   width: 80%;
   height: 80%;
-  /* border: 2px solid green; */
   margin: 50px;
 }
+
 #content-container{
   width: 70%;
 }
-/* Heading styles */
 
 h1 {
   font-weight: bold;
@@ -39,7 +40,6 @@ h1 {
 }
 
 input[type="number"] {
-  /* border: 2px solid green; */
   width: 80%;
   display:block;
   padding: 10px;
@@ -49,9 +49,9 @@ input[type="number"] {
   font-size: 16px;
   margin-bottom: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-/* Button styles */
 
 button {
   display: block;
@@ -64,22 +64,16 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  border: 2px solid red;
 }
 
 button:hover {
   background-color: #0062cc;
 }
 
-/* Container styles */
 
 #income-container {
   background-color: #e0ecff;
-  /* border: 2px solid #007bff; */
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   margin-bottom: 20px;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
@@ -92,11 +86,8 @@ button:hover {
 
 #budget-container {
   background-color: #e0ecff;
-  /* border: 2px solid blue; */
   display: flex;
   flex-direction: row;
-  /* justify-content: left; */
-  /* align-items: center; */
   margin-bottom: 20px;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
@@ -115,8 +106,6 @@ button:hover {
 #income-container select {
   margin-left: 10px;
 }
-
-/* Select styles */
 
 select {
   width: 50%;
@@ -148,13 +137,8 @@ select option:checked {
   color: #fff;
 }
 
-/* Label styles */
-
 label {
-  /* display: block; */
-  /* border: 2px solid red; */
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
-  color: #333;
 }

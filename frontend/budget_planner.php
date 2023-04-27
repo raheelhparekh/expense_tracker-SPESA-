@@ -34,37 +34,10 @@ if (isset($_POST['submit'])) {
 <head>
     <title>Expense Tracker</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/budget_planner.css">
+    <link rel="stylesheet" type="text/css" href="../frontend/css/budget_planner.css">
     <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
 </head>
 
-<style>
-    .form-container {
-    height: 60vh;
-    width: 80%;
-    margin-left: 150px;
-    margin-top: 20px;
-    flex: 1;
-    padding: 20px;
-    grid-template-columns: 1fr 1fr;
-    /* border: 2px solid red; */
-    }
-    .form-container h2{
-        align-items:center;
-    }
-    .chart-container{
-    width: 80%;
-    /* border: 2px solid red; */
-    margin-left:150px;
-    margin-top :20px;
-    justify-content:center;
-
-}
-.header h1{     
-    align-items:center;
-    /* margin-left:25%; */
-}
-</style>
 
 <body>
     <div class="header">
@@ -72,7 +45,7 @@ if (isset($_POST['submit'])) {
             <img src="img/logo1.jpg" alt="SPESA" height="70px" width="70px">
         </a>
         <h1>Budget Planning</h1>
-        <a href="./wallet.php">
+        <a href="./wallet_budget.php">
             <div class="wallet" id="walletField">
                 <i class="fas fa-wallet"></i>
                 <h3>Wallet</h3>
@@ -80,48 +53,43 @@ if (isset($_POST['submit'])) {
         </a>
     </div>
     
-        <div class="form-container"><br><br><br>
-            <h2>Add Expense</h2><br>
-            <form id="expense-form" method="POST">
-                <div class="form-row">
-                    <div class="form-col">
-                        <label for="date">Date:</label>
-                        <input type="date" id="date" name="expense_date" value="<?php echo date('Y-m-d'); ?>" required>
+        <div class="form-container">
+            <div class="input-area">
+                <h2>Add Expense</h2>
+                <form id="expense-form" method="POST">
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="expense_date" value="<?php echo date('Y-m-d'); ?>" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="category">Category:</label>
+                            <select id="category" name="category" required>
+                                <option value="" disabled selected>Select Category</option>
+                                <option value="groceries">Groceries</option>
+                                <option value="utilities">Utilities</option>
+                                <option value="rent">Rent</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-col">
-                        <label for="category">Category:</label>
-                        <select id="category" name="category" required>
-                            <option value="" disabled selected>Select Category</option>
-                            <option value="groceries">Groceries</option>
-                            <option value="utilities">Utilities</option>
-                            <option value="rent">Rent</option>
-                            <option value="transportation">Transportation</option>
-                            <option value="entertainment">Entertainment</option>
-                            <option value="other">Other</option>
-                        </select>
+                    
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="amount">Amount:</label>
+                            <input type="number" id="amount" name="amount" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="note">Note:</label>
+                            <input type="text" id="note" name="note">
+                        </div>
                     </div>
-                </div>
-                <br>
-
-                <div class="form-row">
-                    <div class="form-col">
-                        <label for="amount">Amount:</label>
-                        <input type="number" id="amount" name="amount" required>
-                    </div>
-                    <div class="form-col">
-                        <label for="note">Note:</label>
-                        <input type="text" id="note" name="note">
-                    </div>
-                </div>
-                <br>
-                <input type="submit" name="submit" value="Add Expense">
-            </form>
-        </div>
-
-
-    <script src="js/budget_planner.js"></script>
-</body>
-</html>
+                    <input type="submit" name="submit" value="Add Expense">
+                </form>
+            </div>
+                
 
 <?php
 $sql = "SELECT category, SUM(amount) AS total_amount FROM expense WHERE fk_user_id = {$_SESSION['user_id']} GROUP BY category;";
@@ -148,60 +116,19 @@ while ($row = $result->fetch_assoc()) {
 $mysqli->close();
 
 echo '
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Expense Tracker</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/budget_planner.css">
-    <script src="https://kit.fontawesome.com/2afeadeeee.js" crossorigin="anonymous"></script>
-</head>
-<style>
-*{
-    font-family: Poppins, sans-serif;
-}
-
-.header1 h1{     
-    align-items:center;
-    margin-left:0;
-    // border:2px solid red;
-}
-#myChart{
-    width:120%;
-    justify-content:center;
-    margin-left: 10%; 
-}
-.message{
-    background-color:white;
-    color:red;
-    width:80%;
-    font-size:1.5rem;
-    font-weight:bold;
-    margin:30px;
-    margin-left:20%;
-    font-family: poppins, sans-serif;
-
-
-}
-
-</style>
-
-<body>
+<div class="chart-area">
     <div class="header1">
-        <h1>Smart Statistics</h1>
+        <h2>Smart Statistics</h2>
     </div>
 
         <div class="chart-container">
             <canvas id="myChart"></canvas>
         </div>';
 
-foreach ($categories as $key => $category) {
-    if (isset($budgets[$category]) && $amounts[$key] > $budgets[$category]) {
-        echo '<div class="message">Total expenses for category ' . $category . ' have exceeded the budget amount of ' . $budgets[$category] . '.</div>';
-    }
-}
-
+    
 echo '
+</div>
+</div>
     <script>
         var ctx = document.getElementById("myChart").getContext("2d");
         var myChart = new Chart(ctx, {
@@ -241,6 +168,21 @@ echo '
             }
         });
     </script>
-</body>
-</html>';
-?>
+    ';
+    foreach ($categories as $key => $category) 
+    {
+    if (isset($budgets[$category]) && $amounts[$key] > $budgets[$category]) 
+    {
+        echo '
+        <div class="message">
+            --Total expenses for category ' . $category . ' have exceeded the budget amount of ' . $budgets[$category] . '
+        .</div>
+        ';
+    }
+    }
+
+    ?>
+    </body>
+    
+    <script src="js/budget_planner.js"></script>
+    </html>

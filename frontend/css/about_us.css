@@ -21,13 +21,13 @@ body {
 
 h1 {
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 0px;
+  justify-content: center;
+  
   margin-top: 20px;
   font-size: 3rem;
   margin-bottom: 60px;
   color: rgb(8, 117, 136);
-  position: relative;
+  
 }
 .team-member {
 	display: inline-block;
@@ -66,4 +66,30 @@ h1 {
     padding-bottom: 80px; 
     width: 80%;
     color: #363636;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  align-self: flex-start;
+}
+
+.header img {
+  margin-right: 10%;
+  border-radius: 50px;
+  margin-top: 15%;
+  margin-left: 60%;
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  /* margin-left: 8%; */
+  margin-right: 44%;
+  
 }

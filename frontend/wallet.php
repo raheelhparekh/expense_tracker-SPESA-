@@ -1,35 +1,27 @@
 <?php
-// Connect to the database
 session_start();
 $mysqli = new mysqli("localhost", "root", "", "miniproject");
 
-// Check connection
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
 }
 if(!$_SESSION["user_id"]){
     header("location: /Parth/expense_tracker-SPESA-/frontend/login.php");
 }
-// Check if the form has been submitted
 if (isset($_POST['submit'])) {
-    // Get the form data and escape any special characters
     $category = $mysqli->real_escape_string($_POST['income_category']);
     $amount = $mysqli->real_escape_string($_POST['income_amount']);
     $user_id = $_SESSION["user_id"];
 
-    // Insert the data into the 'expense' table
-    // $sql = "INSERT INTO expense (expense_date, category, amount, note) VALUES ('$date', '$category', '$amount', '$note')";
     $sql = "INSERT INTO `income` (`income_category`, `income_amount`, `fk_user_id`) 
             VALUES ('$category', '$amount', '$user_id');";
 
     if ($mysqli->query($sql) === TRUE) {
-        echo "Expense added successfully";
-        header("location: /Parth/expense_tracker-SPESA-/frontend/wallet_budget.php");
+        echo "Income added successfully";
+        header("location: /Parth/expense_tracker-SPESA-/frontend/wallet.php");
     } else {
         echo "Error: " . $sql . "<br>" . $mysqli->error;
     }
-
-    // Close the database connection
     $mysqli->close();
 }
 ?>
